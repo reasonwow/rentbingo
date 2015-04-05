@@ -39,15 +39,73 @@
     height:1px;
     width:200px;
     }
+        
+    .btn-primary{
+     background-color: #3498db;
+        border-color: #3498db;
+    }    
+     
+    .icon-box .icon-content {
+      background-color: #3498db;
+    }
+     
+    .text-primary{
+     color: #3498db;
+    }
+    
+    .section-title span{
+     color: #3498db;
+    }
+    
+    .product-image
+    .bullet{
+     background: #3498db;
+    }
+        
+    .outline-outward:before {
+      border: 6px solid #3498db;
+    }   
+     .rating-input i, .rate i {
+      color: #3498db;
+    }
+     .pager li > span, .pager li > a:hover {
+      background: #3498db;
+      border-color: #3498db;
+      color: #ffffff;
+    }
+    .navbar-standard .navbar-nav .badge {
+      background: #1abc9c;
+    }
+        
+    ul#one-page-menu.nav.navbar-nav.navbar-left > li > a:hover,
+     ul#one-page-menu.nav.navbar-nav.navbar-left > li > a:focus {
+    
+    color:black;
+    }
+    
+    a#login:hover,
+    a#login:focus    {
+    color:black;
+    } 
+    
+    ul#one-page-menu.nav.navbar-nav.navbar-left > li > a > .active {
+    color:black;
+    }  
+    
+    .btn-primary:hover{
+    background: #9b59b6;
+    border-color: #9b59b6;    
+    }    
+
     </style>
 </head>
 <body>
     
-      <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-image: url(img/intro-home7.jpg);">
+      <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-color:#3498db;">
         <div class="container">  
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse"><i class="fa fa-align-                   justify fa-lg"></i></button>
-              <a href="#" class="navbar-brand"><img src="img/logo_rentify.png" alt="" class="logo-white"></a>
+              <a href="#" class="navbar-brand"></a>
           </div>
             
           <div class="collapse navbar-collapse" id="menu-navbar-collapse">
@@ -65,8 +123,8 @@
               <li><a href="#contacts" title="Contacts" data-ref="contacts">Contacts</a>
               </li>
            </ul> 
-              <ul class="nav navbar-nav navbar-right service-nav">
-                 <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a>
+              <ul  class="nav navbar-nav navbar-right service-nav">
+                 <li><a id="login" href="#" data-toggle="modal" data-target="#myModal">Login</a>
                   
                 </li> 
                 
@@ -142,9 +200,9 @@
               <div style="background: url(img/intro-home7.jpg);" class="sl-slide-inner">
                 <div class="slide-container">
                   <div class="slide-content text-center">
-                    <h2 class="main-title">2015 Winter&nbsp;<span class="text-primary">collection</span></h2>
+                    <h2 class="main-title">2015 New&nbsp;<span class="text-primary">collection</span></h2>
                     <blockquote>
-                      <p>New Arrivals from <span class="WebRupee">Rs.</span> 299 </p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Shop Now</a>
+                      <p>New Arrivals from <span class="WebRupee">Rs.</span> 299 </p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Rent Now</a>
                     </blockquote>
                   </div>
                 </div>
@@ -156,9 +214,9 @@
               <div style="background: url(img/intro-home1.jpg);" class="sl-slide-inner">
                 <div class="slide-container">
                   <div class="slide-content text-center">
-                    <h2 class="main-title">Winter Sale&nbsp;<span class="text-primary">30% off</span></h2>
+                    <h2 class="main-title">New Users&nbsp;<span class="text-primary">50% discount</span></h2>
                     <blockquote>
-                      <p>Exclusively on Ottavio</p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Shop Now</a>
+                      <p>Exclusively on Rentlife</p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Rent Now</a>
                     </blockquote>
                   </div>
                 </div>
@@ -170,9 +228,9 @@
               <div style="background: url(img/intro-home9.jpg);" class="sl-slide-inner">
                 <div class="slide-container">
                   <div class="slide-content text-center">
-                    <h2 class="main-title">Ottavio helps you&nbsp;<span class="text-primary">Sell anyting</span></h2>
+                    <h2 class="main-title">Rentlife helps you&nbsp;<span class="text-primary">rent anyting</span></h2>
                     <blockquote>
-                      <p>Create your online store in minutes!</p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Shop Now</a>
+                      <p>Create your account in minutes!</p><a class="btn btn-light btn-bordered btn-lg">Browse categories</a><a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart fa-lg"></i> Rent Now</a>
                     </blockquote>
                   </div>
                 </div>
@@ -196,9 +254,9 @@
             <div class="col-md-5 text-right">
               <div class="sep-top-md sep-bottom-sm">
                 <div class="bordered-right section-title">
-                  <h2 class="upper">Want to say Hey or find<span class="label-colored">out more?</span></h2>
+                  <h2 class="upper">Checkout the video to see<span class="label-colored">how it works?</span></h2>
                 </div>
-                <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+                <p class="lead">Rentlife makes expensive household necessities available to you at cheap & affordable rents</p>
                 <div class="sep-top-xs"><a href="#" target="_blank" data-wow-delay=".5s" class="btn btn-primary btn-lg wow bounceInLeft">Learn about us</a></div>
               </div>
             </div>
@@ -407,11 +465,11 @@
           <div class="sep-top-sm">
             <!-- start pagination-->
             <ul class="pager circle">
-              <li class="previous hidden-xs"><a href="#">←</a></li>
+              <li class="previous hidden-xs"><a href="#"> <</a></li>
               <li><a href="#">1</a></li>
               <li><span class="current">2</span></li>
               <li><a href="#">3</a></li>
-              <li class="next hidden-xs"><a href="#">→</a></li>
+              <li class="next hidden-xs"><a href="#"> ></a></li>
             </ul>
             <!-- end pagination-->
           </div>
@@ -489,7 +547,7 @@
                 <div data-wow-delay=".9s" class="icon-content img-circle wow flipInX"><i class="fa fa-envelope"></i></div>
                 <div class="icon-box-content">
                   <h6 class="upper info-title">Email</h6>
-                  <p>contact@rentmart.in / support@rentmart.in</p>
+                  <p>contact@rentlife.in / support@rentlife.in</p>
                 </div>
               </div>
               <!--End icon box-->
@@ -553,7 +611,7 @@
         <div class="inner sep-top-md sep-bottom-md">
           <div class="container">
             <div class="row">
-              <div class="col-md-12 text-center"><img src="img/logo-white.png" alt="" class="logo"><small class="sep-top-xs">There are many variations of passages of Lorem Ipsum available</small>
+              <div class="col-md-12 text-center"><small class="sep-top-xs">There are many variations of passages of Lorem Ipsum available</small>
                 <ul class="social-icon sep-top-sm">
                   <li><a href="#" class="fa fa-github fa-2x"></a></li>
                   <li><a href="#" class="fa fa-twitter fa-2x"></a></li>
@@ -567,7 +625,7 @@
         <div class="copyright sep-top-xs sep-bottom-xs">
           <div class="container">
             <div class="row">
-              <div class="col-md-12 text-center"><small>Copyright 2015 @ rentmart.in. All rights reserved.</small></div>
+              <div class="col-md-12 text-center"><small>Copyright 2015 @ rentlife.in. All rights reserved.</small></div>
             </div>
           </div>
         </div>
