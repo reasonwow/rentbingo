@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="shopApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="shopApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="shopApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="shopApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rentbingo.com</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/app/app.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
+    <link rel="stylesheet" href="/app/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/app/styles/owl.carousel.css">
+    <link rel="stylesheet" href="/app/styles/owl.theme.css">
+    <link rel="stylesheet" href="/app/styles/slit-slider-style.css">
+    <link rel="stylesheet" href="/app/styles/slit-slider-custom.css">
+    <link rel="stylesheet" href="/app/styles/idangerous.swiper.css">
+    <link rel="stylesheet" href="/app/styles/yamm.css">
+    <link rel="stylesheet" href="/app/styles/animate.css">
+    <link rel="stylesheet" href="/app/styles/prettyPhoto.css">
+    <link rel="stylesheet" href="/app/styles/bootstrap-slider.css">
+    <link rel="stylesheet" href="/app/styles/device-mockups2.css">
+
+    <link rel="stylesheet" href="/app/styles/main.css">
+    <link rel="stylesheet" href="/app/styles/main-responsive.css">
+    <link id="primary_color_scheme" rel="stylesheet" href="/app/styles/theme_meadow.css">
+    <script src="/app/scripts/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/WebRupee/2.0/font.min.css">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app/styles/build.css">
+
+
+    <noscript>
+        <link rel="stylesheet" href="/app/styles/styleNoJs.css">
+    </noscript>
+
+    <style type="text/css">
+        .navbar-standard{
+            background: #3498db;
+        }
+
+        .outline-outward:before {
+            border: 6px solid #3498db;
+        }
+
+        .product-image .bullet {
+            color: #ffffff;
+            background: #3498db;
+        }
+
+
+        #custom-search-input {
+            margin:0;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        #custom-search-input .search-query {
+            padding-right: 3px;
+            padding-right: 4px \9;
+            padding-left: 3px;
+            padding-left: 4px \9;
+            /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+            margin-bottom: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        #custom-search-input button {
+            border: 0;
+            background: none;
+            /** belows styles are working good */
+            padding: 2px 5px;
+            margin-top: 2px;
+            position: relative;
+            left: -28px;
+            /* IE7-8 doesn't have border-radius, so don't indent the padding */
+            margin-bottom: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            color:#D9230F;
+        }
+
+        .search-query:focus + button {
+            z-index: 3;
+        }
+
+        .checkbox-color input[type="checkbox"]:checked + label::before {
+            background-color: #337ab7;
+            border-color: #337ab7;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="/app/styles/build.css">
+</head>
+<body>
+<!-- Start Nav Section-->
+<nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard">
+    <div class="container">
+        <div class="navbar-header">
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right service-nav">
+                <!-- Login -->
+                <li><a id="login" href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+                <!--Shopping Cart-->
+                <li><a id="dropdownMenuCart" href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-shopping-cart fa-lg"></i>&nbsp;<span class="badge">2</span></a>
+                    <div aria-labelledby="dropdownMenuCart" class="dropdown-menu widget-box">
+                        <div class="shopping_cart_dropdown">
+                            <ul class="cart_list product_list_widget">
+                                <li><a href="#" class="delete"><i class="fa fa-close"></i></a><a href="#"><img alt="" src="/app/img/products/3.jpg"><span>New Peace Baja</span></a>
+                                    <h5 class="quantity">45.00</h5>
+                                </li>
+                                <li><a href="#" class="delete"><i class="fa fa-close"></i></a><a href="#"><img alt="" src="/app/img/products/5.jpg"><span>Sunny Tank Selected</span></a>
+                                    <h5 class="quantity">25.00</h5>
+                                </li>
+                            </ul>
+                            <div class="total">
+                                <h6>Subtotal</h6><span>$70.00</span>
+                            </div>
+                            <div class="action-button"><a href="shop-cart.html" class="btn btn-dark btn-bordered btn-xs upper">View Cart</a><a href="shop-checkout.html" class="btn btn-primary btn-xs upper">Checkout</a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
+            <ul class="nav yamm navbar-nav navbar-left main-nav">
+                <!-- Furniture-->
+                <li class="dropdown"><a href="#" title="Furniture" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Furniture" data-ref="#" class="dropdown-toggle">Furniture<span class="caret"></span></a>
+                    <ul aria-labelledby="menu_item_Furniture" class="dropdown-menu">
+                        <li><a href="index.html" title="Single page" data-ref="index">Beds</a></li>
+                        <li><a href="#" title="" data-ref="#">Almirah & Cupboards</a></li>
+                        <li><a href="#" title="" data-ref="#">Sofas</a></li>
+                        <li><a href="#" title="" data-ref="#">Tables</a></li>
+                        <li><a href="#" title="" data-ref="#">Chairs</a></li>
+                        <li><a href="#" title="" data-ref="#">Baby & Kids Furniture</a></li>
+                    </ul>
+                </li>
+                <!-- Electronics-->
+                <li class="dropdown"><a href="#" title="Electronics" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Electronics" data-ref="#" class="dropdown-toggle">Electronics<span class="caret"></span></a>
+                    <ul aria-labelledby="menu_item_Electronics" class="dropdown-menu">
+                        <li class="dropdown-submenu"><a href="#" title="Air Coolers & Conditioners" id="menu_item_AC">Air Coolers & Conditioners</a> </li>
+                        <li class="dropdown-submenu"><a href="#" title="Refrigerators" id="menu_item_Refrigerators">Refrigerators</a></li>
+                        <li class="dropdown-submenu"><a href="#" title="Television" id="menu_item_TV">Television</a></li>
+                        <li class="dropdown-submenu"><a href="#" title="Washing Machine" id="menu_item_WM">Washing Machine</a></li>
+                    </ul>
+                </li>
+                <!-- Vehicles-->
+                <li class="dropdown yamm-fw"><a href="#" title="Shop" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Vehicles" data-ref="#" class="dropdown-toggle">Vehicles<span class="caret"></span></a>
+                    <ul aria-labelledby="menu_item_Shop" class="dropdown-menu">
+                        <li>
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h6 class="upper hidden-xs">Vehicles</h6>
+                                        <ul class="sep-top-xs widget widget-cat">
+                                            <li class="cat-item"><a href="#" class="upper">Motor Bikes</a></li>
+                                            <li class="cat-item"><a href="#" class="upper">Scooters</a></li>
+                                            <li class="cat-item active"><a href="#" class="upper">Bicycles</a></li>
+                                            <li class="cat-item"><a href="#" class="upper">Cars</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 hidden-xs">
+                                        <h6 class="upper">Latest products</h6>
+                                        <ul class="sep-top-xs widget widget-media">
+                                            <li class="media media-bordered"><a href="shop-product.html" class="pull-left"><img src="/app/img/products/3.jpg" alt="" class="media-object"></a>
+                                                <div class="media-body"><small class="upper">Motor Bike</small>
+                                                    <h6 class="media-heading"><a href="shop-product.html">Bajaj Pulsar 150</a></h6>
+                                                    <div class="product-detail">
+                                                        <div class="price-shop">
+                                                            <del>900</del><ins>500</ins>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media media-bordered"><a href="shop-product.html" class="pull-left"><img src="/app/img/products/5.jpg" alt="" class="media-object"></a>
+                                                <div class="media-body"><small class="upper">Scooter</small>
+                                                    <h6 class="media-heading"><a href="shop-product.html">Honda Eterno</a></h6>
+                                                    <div class="product-detail">
+                                                        <div class="price-shop">
+                                                            <del>500</del><ins>300</ins>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 hidden-xs">
+                                        <h6 class="upper">Shop Cart</h6>
+                                        <div class="sep-top-xs">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <p>Lorem Ipsum is simply dummy text.</p>
+                                        </div>
+                                        <div class="sep-top-xs"><a href="shop-cart.html" class="btn btn-dark btn-bordered btn-block"><i class="fa fa-shopping-cart"></i>&nbsp;view cart</a></div>
+                                    </div>
+                                    <div class="col-md-3 hidden-xs">
+                                        <h6 class="upper">Shop Checkout</h6>
+                                        <div class="sep-top-xs">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                            <ul class="list-inline sep-bottom-xs sep-top-xs">
+                                                <li><i class="fa fa-google-wallet fa-3x"></i></li>
+                                                <li><i class="fa fa-paypal fa-3x"></i></li>
+                                                <li><i class="fa fa-cc-mastercard fa-3x"></i></li>
+                                                <li><i class="fa fa-cc-visa fa-3x"></i></li>
+                                            </ul>
+                                        </div><a href="shop-checkout.html" class="btn btn-primary btn-block">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- More Categories-->
+                <li class="dropdown"><a href="#" title="Blog" data-toggle="dropdown" data-hover="dropdown" id="menu_item_categories" data-ref="#" class="dropdown-toggle">More Categories<span class="caret"></span></a>
+                    <ul aria-labelledby="menu_item_Blog" class="dropdown-menu">
+                        <li><a href="#" title="XBOX/PS3 Games" data-ref="blog">XBOX/PS3 Games</a></li>
+                        <li><a href="#" title="Wedding Wear" data-ref="blog-2">Wedding Wear</a></li>
+                        <li><a href="#" title="Formal Wear" data-ref="blog-masonry">Formal Wear</a></li>
+                        <li><a href="#" title="Camping Gear" data-ref="blog-detail">Camping Gear</a></li>
+                    </ul>
+                </li>
+                <!-- My Account-->
+                <li class="dropdown"><a href="#" title="Pages" data-toggle="dropdown" data-hover="dropdown" id="menu_item_MyAccount" data-ref="#" class="dropdown-toggle">My Account<span class="caret"></span></a>
+                    <ul aria-labelledby="menu_item_My_Account" class="dropdown-menu">
+                        <!-- istanzio un id univoco-->
+                        <li><a href="#" title="My Orders" id="menu_item_About">My Orders</a></li>
+                        <li><a href="#" title="Settings" id="menu_item_Settings">Settings</a></li>
+                        <li><a href="#" title="Log Out" id="menu_item_Log_Out">Log Out</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade modal-sm" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog" style="max-width:360px;">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Log in</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only">Username or Email</label>
+                        <input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Password</label>
+                        <input type="password" value="" placeholder="Password" name="" class="form-control input-lg">
+                    </div>
+                    <div class="form-inline form-group">
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"><small> Remember me</small>
+                            </label>
+                        </div> <br/><br/>
+                        <button type="button" class="btn btn-primary btn-lg btn-xs" style="width:320px; border-radius:0px;">Login</button>
+                    </div><a href="#"><small>Lost your Password?</small></a>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+<div>Angular seed app: v<span app-version></span></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="/app/bower_components/angular/angular.js"></script>
+<script src="/app/bower_components/angular-route/angular-route.js"></script>
+<script src="/app/bower_components/angular-resource/angular-resource.js"></script>
+
+
+
+<script src="Scripts/shopControllers.js"></script>
+<script src="Scripts/shopServices.js"></script>
+<script src="Scripts/app.js"></script>
+<script src="/app/components/version/version.js"></script>
+<script src="/app/components/version/version-directive.js"></script>
+<script src="/app/components/version/interpolate-filter.js"></script>
+<script src="/app/scripts/vendor/jquery.js"></script>
+<script src="/app/scripts/vendor/queryloader2.min.js"></script>
+<script src="/app/scripts/vendor/owl.carousel.js"></script>
+<script src="/app/scripts/vendor/jquery.ba-cond.min.js"></script>
+<script src="/app/scripts/vendor/jquery.slitslider.js"></script>
+<script src="/app/scripts/vendor/idangerous.swiper.js"></script>
+<script src="/app/scripts/vendor/jquery.fitvids.js"></script>
+<script src="/app/scripts/vendor/jquery.countTo.js"></script>
+<script src="/app/scripts/vendor/TweenMax.min.js"></script>
+<script src="/app/scripts/vendor/ScrollToPlugin.min.js"></script>
+<script src="/app/scripts/vendor/jquery.scrollmagic.min.js"></script>
+<script src="/app/scripts/vendor/jquery.easypiechart.js"></script>
+<script src="/app/scripts/vendor/jquery.validate.js"></script>
+<script src="/app/scripts/vendor/wow.min.js"></script>
+<script src="/app/scripts/vendor/jquery.placeholder.js"></script>
+<script src="/app/scripts/vendor/jquery.easing.1.3.min.js"></script>
+<script src="/app/scripts/vendor/jquery.waitforimages.min.js"></script>
+<script src="/app/scripts/vendor/jquery.prettyPhoto.js"></script>
+<script src="/app/scripts/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="/app/scripts/vendor/isotope.pkgd.min.js"></script>
+<script src="/app/scripts/vendor/jquery.fillparent.min.js"></script>
+<script src="/app/scripts/vendor/raphael-min.js"></script>
+<script src="/app/scripts/vendor/bootstrap.js"></script>
+<script src="/app/scripts/vendor/jquery.bootstrap-touchspin.min.js"></script>
+<script src="/app/scripts/vendor/bootstrap-slider.js"></script>
+<script src="/app/scripts/vendor/bootstrap-rating-input.js"></script>
+<script src="/app/scripts/vendor/bootstrap-hover-dropdown.min.js"></script>
+<script src="/app/scripts/jquery.gmap.min.js"></script>
+<script src="/app/scripts/circle_diagram.js"></script>
+<script src="/app/scripts/main.js"></script>
+
+
+
+</body>
+</html>
